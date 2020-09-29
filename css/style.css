@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(21, 58, 83);
+    color: lightgray;
+}
+
+h1 {
+    background-color: navy;
+    text-align: center;
+    color: rgb(159, 159, 241);
+    border: solid white 3px;
+}
+
+li {
+    list-style-type: square;
+}
