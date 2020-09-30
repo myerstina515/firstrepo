@@ -10,6 +10,20 @@ h1 {
     border: solid white 3px;
 }
 
+ul{
+    margin-left: 40px;
+    margin-right: 40px;
+}
 li {
     list-style-type: square;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    margin-left: 40px;
+    margin-right: 40px;
 }
