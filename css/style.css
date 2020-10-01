@@ -10,11 +10,11 @@ h1 {
     border: solid white 3px;
 }
 
-ul{
+ul ol{
     margin-left: 40px;
     margin-right: 40px;
 }
-li {
+ul li {
     list-style-type: square;
 }
 
@@ -26,4 +26,7 @@ h2{
 p{
     margin-left: 40px;
     margin-right: 40px;
+}
+b{
+    text-decoration: underline;
 }
