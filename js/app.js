@@ -72,12 +72,15 @@ if (i===5 && answer!==howManyPeople){
 
 var countries = ['Japan', 'Italy', 'Egypt'];
 for (var i=0; i<=5; i++){
-    var whatCountries = prompt('Fill in the blank! What is one country you think I might want to visit? (They ARE case sensitive, since they are countries!)')
-    if (whatCountries === countries[0] || whatCountries === countries[1] || whatCountries === countries[2]){
+    var whatCountries = prompt('Fill in the blank! What is one country you think I might want to visit?')
+    if (whatCountries.toLowerCase() === countries[0] || whatCountries.toLowerCase() === countries[1] || whatCountries.toLowerCase() === countries[2]){
     alert('Yes, that\'s a great guess!');
     scoreCount++;
     break;
 } else {alert('No, I\'m sorry, keep guessing!')}
+}; 
+if (i=6 && whatCountries !== countries){
+    alert('I\'m sorry, you are out of guesses! The correct answers are Japan, Italy, and Egypt.')
 }
 
 alert('OK! Great job, you got ' + scoreCount + '/7 questions correct! It\'s been great getting to know you!')
