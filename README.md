@@ -8,7 +8,7 @@ I am building a website for the user to get to know things about me. There are s
 ### Author: Tina Myers
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
+* 
 
 ### Reflections and Comments
 * I had a difficult time figuring out how to compare the input to all values inside the array. Although I'm sure theres a way, I went with individually calling each array value, though I'm sure there is a more efficient way.
