@@ -1,27 +1,35 @@
 'use strict';
+
 function greetUser() {
-    var greeting=prompt('Well hello there! Can I call you something other than user?')
+    var greeting=prompt('Well hello there! Can I call you something other than user?');
     alert('Ok, I will call you ' + greeting);
     console.log('What do I call you?: ' + greeting);
+    return greeting;
 }
 
 var scoreCount = 0;
 
-var myName=prompt('It\'s nice to virtually meet you, ' + greeting + '! Let\'s play a game so you can get to know me. I will ask you a few questions, and I want you to guess the answer with "yes" or "no". Is my name TINA?');
-if (myName.toLowerCase()==='yes' || myName.toLowerCase()==='y'){
+function userName(greeting) {
+    var myName=prompt('It\'s nice to virtually meet you, ' + greeting + '! Let\'s play a game so you can get to know me. I will ask you a few questions, and I want you to guess the answer with "yes" or "no". Is my name TINA?');
+    if (myName.toLowerCase()==='yes' || myName.toLowerCase()==='y'){
     alert('That is correct');
     scoreCount++;
-    //console.log('That is correct')
-} else {alert('I\m sorry, that is incorrect') }
-    //console.log('That is incorrect')}
+    console.log('That is correct')
+    } else {alert('I\m sorry, that is incorrect') }
+    console.log('That is incorrect');
+    return myName;
+}
 
-// var studentQuestion= prompt('Am I a student at Code Fellows?');
-// if (studentQuestion.toLowerCase()==='yes' || studentQuestion.toLowerCase()==="y"){
-//     alert('You are correct!');
-//     scoreCount++;
-//     //console.log('You are correct!')
-// } else {alert('Nope, incorrect')}
-//     //console.log('That is incorrect')}
+function studentAtCodeFellows() {
+    var studentQuestion= prompt('Am I a student at Code Fellows?');
+    if (studentQuestion.toLowerCase()==='yes' || studentQuestion.toLowerCase()==="y"){
+        alert('You are correct!');
+        scoreCount++;
+        //console.log('You are correct!');
+    } else {alert('Nope, incorrect')}
+        //console.log('That is incorrect');
+    return studentQuestion;
+}
 
 // var formerJobs = prompt('Have I only worked at one casino?');
 // if (formerJobs.toLowerCase()==='no' || formerJobs.toLowerCase() === 'n'){
@@ -88,4 +96,8 @@ if (myName.toLowerCase()==='yes' || myName.toLowerCase()==='y'){
 // alert('OK! Great job, you got ' + scoreCount + '/7 questions correct! It\'s been great getting to know you!')
 // //alert('Ok, ' + greeting + ', you did a great job with that! Thank you for playing!'
 
-greetUser();
+var name = greetUser();
+
+userName(name);
+
+studentAtCodeFellows();
